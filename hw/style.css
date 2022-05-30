@@ -1,0 +1,174 @@
+p{
+    background-color: white;
+}
+
+#Header{
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+    background-image: url('film.jpg');
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align:center;
+    line-height:100px;
+    color: red;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#Sidebar{
+width:40%;
+height:600px;
+border-radius: 2%;
+/* line-height:50px; */
+padding:20px;
+margin:0px 5px 20px 50px;
+background-color: antiquewhite;
+float:left;
+}
+
+#Sidebar-scroll{
+width:100%;
+height:85%;
+padding:10px;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+
+#Sidebar-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+#Sidebar-scroll::-webkit-scrollbar-thumb {
+    background-clip:padding-box;
+    background-color: rgb(217, 217, 217);
+    min-height:20px;
+    border-radius: 10px;
+}
+
+#Sidebar-click {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: -20px;
+}
+
+#Body{
+width:40%;
+height:640px;
+border-radius: 2%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color:#f7f7f7;
+float:left;
+}
+
+#Body-context{
+    height:30%;
+    color: red;
+    margin:20px 20px 20px 20px;
+    text-align:center;
+}
+#Body-enter{
+    height:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin:-50px 0px 0px 150px;
+    /* align-items:center; */
+}
+
+#Body-enter-userID{
+    width: 300px;
+    height: 40px;
+}
+#userID{
+    width: 100%;
+    height: 100%;
+}
+#Body-enter-pwd{
+    width: 300px;
+    height: 40px;
+}
+#userPwd{
+    width: 100%;
+    height: 100%;
+}
+
+
+#Body-enter-code{   
+    width: 450px;
+    height: 50px;
+}
+#Yzm{
+    width: 300px;
+    height: 40px;  
+    float:left;
+
+}
+#code{
+    /* background-color: blue; */
+    width: 100px;
+    height: 40px;  
+    float:left;
+    font-size: 20px;
+}
+
+#btLogin{
+    width: 80px; 
+    height: 40px;  
+    font-size: 15px;
+    color: white;
+    /* border:2px ; */
+    background-color:black;
+    border-radius: 10%;
+}
+
+
+
+#Footer{
+background-repeat: no-repeat;
+background-size: 100% 200px;
+background-color:#f7f7f7;
+display: flex;
+flex-direction: row;
+justify-content: center;
+text-align:center;
+line-height:100px;
+color:black;
+}
+
+
+#myBtn {
+    /* //初始化不顯示 */
+    display: none; 
+    /* //fixed = 畫面的絕對位置，所以會跟著跑 */
+    position: fixed; 
+    /* //離下面30 pixel */
+    bottom: 20px; 
+    /* //離右邊30 pixel */
+    right: 20px; 
+    border-radius: 20px; 
+    background-color: white; 
+    opacity:0.5; 
+    /* //游標指過去會變手指 */
+    cursor: pointer; 
+}
+#myBtn:hover {
+    /* //游標只上去會變灰色 */
+    background-color: red;
+}
+
+#upPic{
+    width: 30px;
+    height: 30px;
+}
+
+
+

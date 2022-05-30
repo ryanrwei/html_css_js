@@ -1,0 +1,62 @@
+<!-- 告訴瀏覽器這是html檔案 -->
+<!DOCTYPE html> 
+
+<!-- 
+A. 在html中使用JS:
+
+1.一種是直接在body裡用script標籤來寫
+<body>
+    <script>
+        // 用JS在html寫東西
+        document.write("hello ryan");
+        document.write("<h1>hello ryan<h1/>");
+    </script>
+</body>
+
+2.另一種是用引入的，跟CSS一樣的道理 
+是在body裡面引用
+
+-----------------
+B. 遇到bug時,去devTool的console 可以看到報錯
+
+-----------------
+C. Event Listener
+跟JS一樣，可以直接寫在html，也可以用引入的
+*他是寫在JS裡面的
+
+***直接寫在html
+<img id="img" src="cat.jpg" , width="200">
+//onclick表示:當被按下去的時候，handle_click這個fn就會被觸發，執行fn的內容 
+//this:就是被按下去的那個元素，現在的情況也就是那個button標籤
+//handle_click(this):就是把this當作輸入傳進去 
+<button id="btn" onclick="handle_click(this)">按我</button>
+<script src="script.js"></script>
+
+-->
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content="ryan web, there are lots of fun "/>
+        <meta name="author" content="ryan"/>
+        <meta name="keywords" content="ryan, html"/>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0"/>
+        <title>ryan HTML+JS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- *** script *** -->
+        <h1 id="header">ryan is tall</h1>
+        <a id="link" href="https://www.youtube.com/">https://www.youtube.com/</a>
+        <!-- 引入script需要再下面才會有效果，否則會被覆蓋且報錯  -->
+        <!-- <script src="script.js"></script> -->
+        <br/>
+
+        <!-- *** event listener *** -->
+        <img id="img" src="cat.jpg" width="200">
+        <button id="btn">按我</button>
+        <script src="script.js"></script>
+
+        
+
+    </body> 
+</html>

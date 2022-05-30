@@ -1,0 +1,51 @@
+/* .food{
+    color: blue;
+}
+.drink{
+    color: green;
+}
+.background-color{
+    background-color: grey;
+}
+#css-h1{
+    color: purple;
+    background-color: aquamarine;
+}
+
+/* 同時套用到多個 */
+/* .class-1, #id-1{
+    color: purple;
+    background-color: aquamarine;
+} */ 
+
+/* 套用到所有標籤 */
+/* * {
+    color: purple;
+    background-color: aquamarine;
+} */
+
+/* 套用表格內的li標籤 */
+/* ul li{
+    background-color: aquamarine;
+} */
+
+/* 套用表格內的a標籤 */
+/* ul a{
+    background-color: aquamarine;
+} */
+
+/* 套用屬性 */
+/* [type]{
+    background-color: aquamarine;
+} */
+
+/* hover: 當滑鼠，滑過時會改變性質 */
+h1:hover{
+    background-color: aquamarine;
+}
+#id-1:hover{
+    background-color: aquamarine;
+}
+[type]:hover{
+    background-color: aquamarine;
+}

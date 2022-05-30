@@ -1,0 +1,100 @@
+<!-- 
+style
+屬性內容: 
+color,
+font-size, 
+background-color, 
+border 邊框:需要定義三個值(框大小、樣式、顏色),
+width max-width,
+height,
+
+顏色: 利用w3c html HTML Color Picker or goole 色碼表
+
+*** padding & margin ***
+用來控制空間。
+內部空間: padding
+外部空間: margin
+padding-top、margin-down...可控制只extend哪個方向
+依序輸入四個值，可以個別定義上右下左(順時針)
+負值則是會往那個方向超出邊框的走
+
+*** float & display ***
+用來排版
+float:看影片講解比較清楚25分左右 https://www.youtube.com/watch?v=Ml78vnNTBLw&ab_channel=GrandmaCan-%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83
+
+p預設顯示方式是block會佔一個區塊，也就是會自動換行
+span預設顯示方式是inline用多少佔多少，不會自動換行
+display則可以用來改變這個
+
+*** position ***
+用來定位，可以把東西固定在WEB某個地方
+fixed:固定定位，會跟著web上下移動而移動
+relative:相對定位，相對於原本應該出現的地方，偏移多少距離。且有相對定位的東西會蓋過其他東西
+absolute:類似fixed，但不會跟著web上下移動而移動，但會根據最靠近的外層的定位而改變
+top:固定距離上方多少距離、bottom以此類推
+
+*** opacity & border-radius ***
+透明度:0~1
+邊緣圓弧:值越大，越園，也可以上右下左4個值設定
+
+*** style 標籤 ***
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ryan web CSS</title>
+    </head>
+    <body>
+        <!-- CSS -->
+        <div style="color: red; font-size: 20;">
+            <h1 style="color: #cc0066;">CSS教學</h1>
+            <p style="border: 5px dashed green; width: 220px; height: 30px;">this is a paragraph</p>
+        </div>
+
+        <!-- padding & margin -->
+        <h1>padding & margin part</h1>
+        <div style="padding:20px 30px 40px 50px; margin: 20px; background-color: lightblue; border:1px solid black;">
+            大家好
+        </div>
+
+        <!-- float & display -->
+        <!-- <img src="cat.jpg" width="200px" style="float: left;"/> -->
+
+        <!-- <ul style="float:left; background-color: aqua; margin: 0px; padding:15px;">
+            <li>main page</li>
+            <li>blog</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+        <p>a simple tabulate </p>
+        
+        <p style="display: inline;">heloo</p>
+        <p style="display: inline;">haha</p>
+        <span>span1</span>
+        <span>span2</span> -->
+
+        <!-- position -->
+        <h1>position</h1>
+        <div style="position:relative; top:50px; width:80px; height:80px; background-color:blue;"></div>
+        <div style="width:120px; height:120px; background-color:red;"></div>
+
+        <br/>
+        <div style="position:relative; padding:30px; border:5px solid red;">
+            <div style="position:relative; padding:30px; border:5px solid red;">
+                <div style="position:absolute; top:0px; right:0px; width:40px; height:40px; background-color:blue"></div>
+            </div>
+        </div>
+
+        <!-- opacity & border-radius -->
+        <h1>opacity & border-radius</h1>
+        <p style="position:relative; top:65px; left: 25px;">hello</p>
+        <div style="opacity: 0.7; border-radius: 10px; width: 80px; height: 80px; background-color: blue"></div>
+
+    </body>
+</html>

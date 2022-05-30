@@ -1,0 +1,53 @@
+.container{
+    display:flex;
+
+    /* 自動換行 */
+    flex-wrap: wrap;
+
+    /* 拓展方向 */
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+
+    /* 放到主軸中間(水平置中) */
+    /* justify-content: center; */
+    /* 放到主軸右邊(置右) */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+
+    /* 次軸置中，flex-direction: column標的就是主軸 */
+    /* align-items: center; */
+
+    /* 但當主軸出現換行時，就要用align-content */
+    align-content: center;
+
+    height: 300px;
+    border: 1px solid red;
+}
+
+.container div{
+    border: 1px solid rgb(202,201,201);
+    padding: 10px;
+    width: 100px;
+    height: 20;
+}
+
+/* 
+flex:1。因為該列共有三個div, 1表示1/3，也就是三個div平分該列，且為滿版 
+order:顯示順序
+
+*/
+
+.box-1{
+    /* flex:1; */
+    /* order:2; */
+}
+
+.box-2{
+    /* flex:1; */
+    /* order:1; */
+}
+
+.box-3{
+    /* flex:1; */
+    /* order:3; */
+}

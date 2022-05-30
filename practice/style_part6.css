@@ -1,0 +1,48 @@
+/* 定義動畫 */
+@keyframes change-color{
+    /* # method 1 */
+    /* from {background-color: red;}
+    to {background-color: blue;} */
+
+    /* # method 2 */
+    0% {background-color: red; top: 10px; left: 10px;}
+    20% {background-color: blue; top: 30px; left: 30px;}
+    40% {background-color: green; top: 50px; left: 50px;}
+    60% {background-color: palegreen; top: 70px; left: 70px;}
+    80% {background-color: purple; top: 90px; left: 90px;}
+    100% {background-color: black; top: 110px; left: 110px;}
+
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    /* 讓動畫動起來 */
+    position: relative;
+}
+
+
+/* .box-animation{ */
+    /* 呼叫動畫 */
+    /* animation-name: change-color; */
+    /* 動畫持續時間 */
+    /* animation-duration: 10s; */
+    /* 動畫操作次數 */
+    /* animation-iteration-count: infinite; */
+    /* load web之後要多久才會開始動畫 */
+    /* animation-delay: 2s; */
+/* } */
+
+/* 只有滑鼠觸發,才會動，移開會停止 */
+.box-animation:hover{
+    /* 呼叫動畫 */
+    animation-name: change-color;
+    /* 動畫持續時間 */
+    animation-duration: 10s;
+    /* 動畫操作次數 */
+    animation-iteration-count: infinite;
+    /* load web之後要多久才會開始動畫 */
+    animation-delay: 1s;
+}

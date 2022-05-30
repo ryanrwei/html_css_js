@@ -1,0 +1,70 @@
+<!-- 
+style
+屬性內容: 
+color,
+font-size, 
+background-color, 
+border 邊框:需要定義三個值(框大小、樣式、顏色),
+width max-width,
+height,
+
+顏色: 利用w3c html HTML Color Picker or goole 色碼表
+
+*** style 標籤 ***
+可在head標籤下，創一個style標籤統一設定
+而在body新定義的屬性會覆蓋head的定義的
+
+*** 引入外部CSS檔案 ***
+上面說到可以在head先定義style，而現在要介紹的方法是
+創一個.css檔，來載入事先寫好的style
+此方法利於多個page都是用大致的風格時，就很方便
+
+link:從外部引入一個檔案 (要寫在head標籤裡)
+rel="stylesheet" 表示引入的檔案是.css
+
+*** class & id ***
+class用來分類.方便css檔控制, 可以放入多個
+id給標籤唯一識別名稱。他不像class可以出現多次，
+id是唯一識別，所以只能出現一次，且一個標籤只能有一個id
+===> 標籤 跟 id 是 1vs1
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ryan web CSS</title>
+        <!-- 引入外部CSS檔案 -->
+        <link rel="stylesheet" href="style_part4.css">
+    </head>
+    <body>
+        <!-- class & id  -->
+        <h1 id="css-h1"> class & id </h1>
+        <p class="food background-color">food1</p>
+        <p class="food">food2</p>
+        <p class="food">food3</p>
+        <p class="drink background-color">drink1</p>
+        <p class="drink">drink2</p>
+        <p class="drink">drink3</p>
+
+        <!-- 更多套用CSS的方法 -->
+        <h1>更多套用CSS的方法</h1>
+        <p class="class-1">first paragraph</p>
+        <p class="class-1">second paragraph</p>
+        <h2 id="id-1">hello guys</h2>
+        <h2>hello girls</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/">youtube</a></li>
+            <li>fb</li>
+            <li>ig</li>
+        </ul>
+        <input type="text"/>
+        <br/>
+        <input type="password"/>
+
+
+
+    </body>
+</html>

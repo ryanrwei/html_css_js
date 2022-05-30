@@ -1,0 +1,51 @@
+<!-- 
+style
+屬性內容: 
+color,
+font-size, 
+background-color, 
+border 邊框:需要定義三個值(框大小、樣式、顏色),
+width max-width,
+height,
+
+顏色: 利用w3c html HTML Color Picker or goole 色碼表
+
+*** style 標籤 ***
+可在head標籤下，創一個style標籤統一設定
+而在body新定義的屬性會覆蓋head的定義的
+
+*** 引入外部CSS檔案 ***
+上面說到可以在head先定義style，而現在要介紹的方法是
+創一個.css檔，來載入事先寫好的style
+此方法利於多個page都是用大致的風格時，就很方便
+
+link:從外部引入一個檔案 (要寫在head標籤裡)
+rel="stylesheet" 表示引入的檔案是.css
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ryan web CSS</title>
+        <!-- 引入外部CSS檔案 -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- style 標籤 -->
+        <h1> style 標籤 </h1>
+        <p>hello guys</p>
+        <p>hello guys</p>
+        <p style="color: red;">hello guys</p>
+        <p style="color: red;">hello guys</p>
+        <p>hello guys</p>
+        <p style="color: red;">hello guys</p>
+        <h1> asdasds </h1>
+
+        <!-- 引入外部CSS檔案  -->
+
+    </body>
+</html>

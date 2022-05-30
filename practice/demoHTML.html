@@ -1,0 +1,186 @@
+
+<!-- html 是標籤式語言 
+由上而下，由左而右的顯示
+-->
+
+<!-- 告訴瀏覽器這是html檔案 -->
+<!DOCTYPE html> 
+
+<!-- html:最外層
+----------------
+head:網頁資訊
+meta:編碼方式 charset="UTF-8"
+title:標題
+ ---------------
+body:網頁內容
+h:標題。 h1 -> h6:都是標題，字體越來越小，通常h1只有一個
+
+***基本標籤***
+p:標題底下的內容
+b:讓P得東西變粗體字
+i:斜體
+br:換行 <br></br> = <br/>
+hr:橫線 <hr></hr> = <hr/>
+
+***連結&圖片***
+a(anchor):連結, href: a標籤的屬性
+img:圖片, 標籤的屬性: src height width
+
+***影片 & 嵌入youtube影片***
+video:影片 屬性:src controls(控制影片播放) height width
+video 內的文字是當video無法撥放時才會顯示
+iframe:載入youtube影片
+
+***列表 & 表格***
+ul, ol:列表方式, 屬性:type
+li:裡面放內容
+---------------
+table:表格 屬性:width
+tr:row
+td:column
+
+***html容器 div & span***
+div:容器，可以將很多標籤放在一起，方便美化，以利CSS操作
+span:容器，功能跟div一樣
+
+*比較: 有些標籤會自動換行有些不會
+a標籤是字寬度多少，就顯示多少，不會自動換行
+p則是直接佔一行，會自動換行
+
+但div會換行，span不會
+
+***html輸入標籤***
+input:輸入 
+屬性:
+1.type 輸入類型:text純文字,password密碼(會自動遮擋)
+2.placeholder 提示字
+3.date
+4.range
+5.checkbox
+6.file
+7.還有很多
+
+textarea:純文字輸入空間，在裡面放的字的話，則會出現預設字
+
+***meta標籤***
+meta標籤: 不會影響到網頁內容
+但比如用google搜尋該網頁時，description、author、keywords就會顯示在那個超連結的下面
+而值得一提的是viewport是使用者進到該網頁，網頁呈現的大小，
+width-device-width: 代表會隨著裝置不同，而有不同呈現，比如手機跟電腦不同
+initial-scale-1.0: 100%比例大小
+--------------- -->
+<html>
+    <head>
+        <!-- meta標籤 -->
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content="ryan web, there are lots of fun "/>
+        <meta name="author" content="ryan"/>
+        <meta name="keywords" content="ryan, html"/>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0"/>
+        <title>ryan web</title>
+    </head>
+    <body>
+        <!-- 基本標籤 -->
+        hello I am ryan
+        <h2>第1篇文章</h2>
+        <p> 天氣真的<i><b>好</b></i> </p>
+        <br></br>
+        <hr></hr>
+        <h3>第2篇文章</h3>
+        <p>天氣真的差</p>
+
+        <!-- 連結&圖片 -->
+        <a href="https://www.youtube.com/">youtube</a>
+        <a href="page2.html">第二頁</a>
+        <a href="dir/page3.html">第三頁</a>
+        <a href="cat.jpg">cat</a>
+        
+        <img src="cat.jpg" width="200"/>
+        <!-- <img src="https://www.taipeitimes.com/images/2022/03/27/P14-220327-357.jpg"/> -->
+
+        <!-- 影片 & 嵌入youtube影片 -->
+        <!-- video 內的文字是當video無法撥放時才會顯示 -->
+        <video src="demoVideo.mp4" controls height="300">瀏覽器無法載入影片</video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CQyFNY6jz-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <!-- 列表 & 表格 -->
+        <ol type="A">
+            <li>google</li>
+            <li>fb</li>
+            <li>ig</li>
+        </ol>
+    
+        <table width="400">
+            <tr>
+                <td>date</td>
+                <td>math</td>
+                <td>english</td>
+            </tr>
+            <tr>
+                <td>05/06</td>
+                <td>50</td>
+                <td>70</td>
+            </tr>
+        </table>
+    
+        <!-- html容器 div & span -->
+        <div style="color:red;">
+            <video src="demoVideo.mp4" controls height="300">瀏覽器無法載入影片</video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CQyFNY6jz-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <ol type="A">
+                <li>google</li>
+                <li>fb</li>
+                <li>ig</li>
+            </ol>
+            <table width="400">
+                <tr>
+                    <td>date</td>
+                    <td>math</td>
+                    <td>english</td>
+                </tr>
+                <tr>
+                    <td>05/06</td>
+                    <td>50</td>
+                    <td>70</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>天氣真的差</p>
+
+        <span>span1</span>
+        <span>span2</span>
+        <hr/>
+        <div>div1</div>
+        <div>div2</div>
+
+        <!-- html輸入標籤 -->
+        <input type="text" placeholder="請輸入帳號"/>
+        <br/>
+        <br/>
+        <input type="password" placeholder="請輸入密碼"/>
+        <br/>
+        <br/>
+        <input type="date" />
+        <br/>
+        <br/>
+        <input type="range" />
+        <br/>
+        <br/>
+        <input type="file" />
+        <br/>
+        <br/>
+        <input type="checkbox" />
+        <br/>
+        <br/>
+        <textarea>哈哈</textarea>
+
+
+
+
+
+
+    </body>
+
+</html>
