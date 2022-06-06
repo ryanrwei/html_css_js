@@ -1,0 +1,48 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#color {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(91, 91, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#word {
+    border: 1px;
+    background-color: black;
+    height: 80px;
+    width: 500px;
+    color: white;
+    text-align:center;
+    line-height:80px;
+    border-radius: 5%;
+    font-size: 30px;
+    font-weight:bold;
+    letter-spacing: 3px;
+}
+
+#btn {
+    margin: 30px;
+    height: 60px;
+    width: 150px;
+    color: white;
+    font-size: 30px;
+    font-weight:bold;
+    border: 2px solid black;
+    border-radius: 5%;
+    background:transparent;
+}
+
+#btn:hover {
+    background: black;
+}
+
+
+

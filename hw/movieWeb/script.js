@@ -19,7 +19,7 @@ function createCode(){
 
 function changeColor(){
         let codeColor = document.getElementById("code");
-        colorList = new Array('#FF1C1C', '#FFCC6E', '#FFFF1C', '#1AFF19', '#1CFFFF', '#1212FF', '#9F1CFF', '#FF19FF', '#8C8C8C')
+        let colorList = new Array('#FF1C1C', '#FFCC6E', '#FFFF1C', '#1AFF19', '#1CFFFF', '#1212FF', '#9F1CFF', '#FF19FF', '#8C8C8C')
         let index = Math.floor(Math.random()*colorList.length);
         codeColor.style.backgroundColor = colorList[index];
 }
